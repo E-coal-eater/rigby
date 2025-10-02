@@ -37,14 +37,6 @@ def login():
 @app.route('/connected', methods=['GET'])
 def connected():
     username = request.args.get('username', 'Admin')
-    if request.method == 'POST':
-        if LedState == False:
-            num = write.read(str(100))
-            ledState = True
-        elif LedState == True:
-            num = write.read(str(200))
-            ledState = False
-
     return render_template('connected.html', username=username)
 
 
