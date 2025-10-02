@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <head>
     <title>connected</title>
+    <link rel="stylesheet" href="static/connected.css"/>
 </head>
 
 <body>
-    <img src="static/rigby2.gif" alt="rigby" height="500px" width="500px"/>
-    <img src="static/bleh.gif" alt="bleh" height="500px" width="500px"/>
-    <a href="/login">back to login</a>
-    <form method="POST" action="/led_on">
-        <button type="submit">click for surpise</button>
-    </form>
+    <div class="main">
+        <img src="static/rigby2.gif" alt="rigby" height="500px" width="500px"/>
+        <div class="buttons">
+            <a href="/login">back to login</a>
+            <form method="POST" action="/led_on">
+                <button type="submit">click for surpise</button>
+            </form>
+        </div>
+        <img src="static/bleh.gif" alt="bleh" height="500px" width="500px"/>
+    </div>
 </body>

@@ -1,5 +1,5 @@
 html{
-    background-color: darkgrey;
+    background-color: grey;
 }
 
 body{
@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 
-div{
+div.login-box {
     background-color: white;
     width: 500px;
     height: 500px;
@@ -18,4 +18,40 @@ div{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 50px;
+}
+
+div.login-input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 250px;
+    height: 20px;
+    border-width: 3px;
+    border-color: black;
+}
+
+
+button{
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+}
+
+img{
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
 }
