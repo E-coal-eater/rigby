@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title>ERROR</title>
+        <meta http-equiv="refresh" content="10;url=/login">
+        <link rel="stylesheet" href="static/error.css">
     </head>
     <body>
-        <img src="static/rigby.gif" alt="are you sure ?" width="500px" height="500px"/>
-        <a href="/login">Click here to go back to login</a>
+        <img id="rigby" src="static/rigby.gif" alt="are you sure ?" width="450px" height="450px"/>
+        <a href="/login">Click here if not redirected</a>
+        <button type="button" id="btnAfficher">clique ici pour une petite flashbang sympa</button>
+
+        <img id="monImage" src="static/omniman.jfif" alt="Image découverte" >
+        <script>
+          const btn = document.getElementById('btnAfficher');
+          const image = document.getElementById('monImage');
+      
+          btn.addEventListener('click', () => {
+            if (image.style.display === 'none') {
+              image.style.display = 'block';
+              btn.textContent = "Cacher l'image";
+            } else {
+              image.style.display = 'none';
+              btn.textContent = "Découvrir l'image";
+            }
+          });
+        </script>
     </body>
 </html>
